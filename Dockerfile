@@ -5,6 +5,6 @@ WORKDIR /usr/src/works
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
+ADD . .
 
 CMD [ "python", "./random_forest.py" ]
